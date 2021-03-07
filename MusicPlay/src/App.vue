@@ -1,19 +1,17 @@
 <template>
-  <div id="app">
-  </div>
+<div id="app" >
+    <Mheader></Mheader>
+    <router-view></router-view>
+</div>
 </template>
 
 <script>
+import Mheader from '@/component/layout/header.vue'
 export default {
-  name: 'app',
-  data () {
-    return {
-      
+    name: 'app',
+    components: {
+        Mheader,
     }
-  }
 }
 </script>
 
-<style lang="scss">
-
-</style>
